@@ -11,7 +11,7 @@ class GoogleTranslatorUnofficial implements Translator
 
     public function __construct(Browser $browser)
     {
-        $this->browser      = $browser;
+        $this->browser = $browser;
     }
 
     /**
@@ -23,12 +23,13 @@ class GoogleTranslatorUnofficial implements Translator
     public function translate($sourceLanguage, $destinationLanguage, $text)
     {
         $url = sprintf(self::ENDPOINT_MASK, $sourceLanguage, $destinationLanguage, urlencode($text));
-
         $response = $this->browser->get($url);
-
         $brokenJson = $response->getContent();
 
-        $fixedJson = str_replace(',,', ',', $brokenJson);
+        while (strpos($brokenJson, ',,') !== false) {
+            $brokenJson = str_replace(',,', ',', $brokenJson);
+        }
+        $fixedJson = $brokenJson;
 
         $data = json_decode($fixedJson);
 

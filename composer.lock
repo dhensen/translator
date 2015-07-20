@@ -4,20 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e823650312be0048e8e43a4df84bdcf2",
+    "hash": "b79ea35a5e4c25bbcdd96e4904863927",
     "packages": [
         {
-            "name": "kriswallsmith/buzz",
-            "version": "v0.13",
+            "name": "dhensen/buzz-additions",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/kriswallsmith/Buzz.git",
-                "reference": "487760b05d6269a4c2c374364325326cfa65b12c"
+                "url": "https://github.com/dhensen/buzz-additions.git",
+                "reference": "8ec65fc3973f6ffeb978d47177d25c4f0a1c4db0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/487760b05d6269a4c2c374364325326cfa65b12c",
-                "reference": "487760b05d6269a4c2c374364325326cfa65b12c",
+                "url": "https://api.github.com/repos/dhensen/buzz-additions/zipball/8ec65fc3973f6ffeb978d47177d25c4f0a1c4db0",
+                "reference": "8ec65fc3973f6ffeb978d47177d25c4f0a1c4db0",
+                "shasum": ""
+            },
+            "require": {
+                "kriswallsmith/buzz": "~0.13",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DHensen\\": "src/DHensen/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "dhensen",
+                    "email": "dino.hensen@gmail.com"
+                }
+            ],
+            "description": "Provides bearer auth listener for buzz browser",
+            "time": "2015-07-20 14:29:06"
+        },
+        {
+            "name": "kriswallsmith/buzz",
+            "version": "v0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kriswallsmith/Buzz.git",
+                "reference": "d4041666c3ffb379af02a92dabe81c904b35fab8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/d4041666c3ffb379af02a92dabe81c904b35fab8",
+                "reference": "d4041666c3ffb379af02a92dabe81c904b35fab8",
                 "shasum": ""
             },
             "require": {
@@ -52,13 +92,15 @@
                 "curl",
                 "http client"
             ],
-            "time": "2014-09-15 12:42:36"
+            "time": "2015-06-25 17:26:56"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
-    "stability-flags": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "dhensen/buzz-additions": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

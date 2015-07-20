@@ -3,7 +3,7 @@
 namespace DHensen\Translator\Bing;
 
 use Buzz\Browser;
-use Buzz\Listener\BearerAuthListener;
+use DHensen\BuzzAdditions\Listener\BearerAuthListener;
 use DHensen\Translator\Translator;
 
 class BingTranslator implements Translator

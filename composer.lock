@@ -1,18 +1,24 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e1efa5b7368315b9091bf46477a7aad4",
+    "hash": "e823650312be0048e8e43a4df84bdcf2",
     "packages": [
         {
             "name": "kriswallsmith/buzz",
-            "version": "dev-master",
+            "version": "v0.13",
             "source": {
                 "type": "git",
-                "url": "https://github.com/dhensen/Buzz.git",
-                "reference": "1c266152b9920b37526c517d135e03eca5dcf008"
+                "url": "https://github.com/kriswallsmith/Buzz.git",
+                "reference": "487760b05d6269a4c2c374364325326cfa65b12c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kriswallsmith/Buzz/zipball/487760b05d6269a4c2c374364325326cfa65b12c",
+                "reference": "487760b05d6269a4c2c374364325326cfa65b12c",
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0"
@@ -29,6 +35,7 @@
                     "Buzz": "lib/"
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -45,24 +52,17 @@
                 "curl",
                 "http client"
             ],
-            "time": "2015-03-06 16:10:11"
+            "time": "2014-09-15 12:42:36"
         }
     ],
     "packages-dev": [],
-    "aliases": [
-        {
-            "alias": "0.13",
-            "alias_normalized": "0.13.0.0",
-            "version": "9999999-dev",
-            "package": "kriswallsmith/buzz"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "kriswallsmith/buzz": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "php": ">=5.3.0"
+    },
     "platform-dev": []
 }
